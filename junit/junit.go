@@ -121,12 +121,12 @@ type Property struct {
 type Result struct {
 	Message string `xml:"message,attr"`
 	Type    string `xml:"type,attr,omitempty"`
-	Data    string `xml:",cdata"`
+	Data    string `xml:"data"`
 }
 
 // Output represents output written to stdout or sderr.
 type Output struct {
-	Data string `xml:",cdata"`
+	Data string `xml:"data"`
 }
 
 // CreateFromReport creates a JUnit representation of the given gtr.Report.
